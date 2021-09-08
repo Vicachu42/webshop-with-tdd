@@ -94,7 +94,13 @@
   ],
   "carts": [
     {
-
+      "id": 3,
+      "shikona": "Ura",
+      "rank": "Maegashira",
+      "height": "176 cm",
+      "weight": "147 kg",
+      "price": "&#165;500 000",
+      "picture": "/src/assets/ura.jpg"
     }
   ]
 }

@@ -8,6 +8,7 @@ Assignment from the third semester studying Frontend Development. The task is to
 ### Log
 
 **September 8th**
+
 Tasks completed today:
 - Project board created. Made a Kanban board of tasks and requirement specifications. More will be added as I go along.
 - Sketched project. Made a map of the different views and components I will use in Figma. 
@@ -18,3 +19,5 @@ To do:
 - Create API. I've taken a database from an earlier project ([shopping-assignment](https://github.com/Vicachu42/shopping-assignment)), now I need to get more info how to make it into an API that works for this project
 - Finish sketch how the page is supposed to look. Will model after [sumo.or.jp](https://www.sumo.or.jp/En/).
 - Start testing simpler components that aren't dependant on API.
+
+*Late notes:* I managed to create a database that listens to a port. Next step is to see if I can loop through the product list.
