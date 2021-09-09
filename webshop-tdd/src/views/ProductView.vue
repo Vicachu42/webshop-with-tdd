@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body-block">
     <h2>Product view</h2>
     <ProductItem />
   </div>
@@ -16,6 +16,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.body-block {
+  background-color: white;
+}
 </style>

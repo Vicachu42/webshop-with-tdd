@@ -5,6 +5,12 @@ Assignment from the third semester studying Frontend Development. The task is to
 
 [Figma sketches](https://www.figma.com/file/1kOgUaWugjZF6SvEFDwv87/webshop-tdd-sketch?node-id=3%3A22)
 
+**To start backend: **
+Open terminal in the sumo-api folder and run "node app.js"
+
+**To start frontend: **
+Open terminal in project folder and run "npm run serve"
+
 ### Log
 
 **September 8th**
@@ -21,3 +27,10 @@ To do:
 - Start testing simpler components that aren't dependant on API.
 
 *Late notes:* I managed to create a database that listens to a port. Next step is to see if I can loop through the product list.
+
+**September 9th**
+Tasks completed today:
+- Sketch in Figma. That card is now moved to done.
+
+
+I also made som progress when it comes to rendering the API. I will used lifecycle hooks to render the data when site loads. This will require a different method of testing, more on that found [here](https://medium.com/@sebastiencorreia/testing-vue-js-lifecycle-hook-43c1227815bd).

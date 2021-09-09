@@ -1,21 +1,20 @@
 <template>
-  <div>
-    <h1>Home</h1>
-    <ShoppingCart />
+  <div class="wrapper">
+    <Header />
     <ProductView />
     <CartView />
   </div>
 </template>
 
 <script>
-import ShoppingCart from '../components/ShoppingCart.vue';
+import Header from '../components/Header.vue';
 import ProductView from './ProductView.vue';
-import CartView from './CartView.vue'
+import CartView from './CartView.vue';
 
 export default {
   name: 'Home',
   components: {
-    ShoppingCart,
+    Header,
     ProductView,
     CartView
   }
@@ -23,5 +22,9 @@ export default {
 </script>
 
 <style>
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Shopping cart</p>
+    <img src="../assets/basket.png" alt="basket" class="shopping-basket">
   </div>
 </template>
 
@@ -10,6 +10,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.shopping-basket {
+  background-color: black;
+  border: none;
+  width: 35px;
+  margin-top: 11px;
+}
 </style>
