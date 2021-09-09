@@ -25,14 +25,15 @@ export default {
   background-color: black;
   width: 100%;
   height: 50px;
-  overflow: hidden;
 }
 
 .header-content {
+  width: 1000px;
+  box-sizing: border-box;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 1000px;
+  justify-content: space-between;
 }
 
 .header-text {

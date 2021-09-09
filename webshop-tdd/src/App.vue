@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=M+PLUS+1p:wght@500;900&display=swap');
 
 #app {
   -webkit-font-smoothing: antialiased;
