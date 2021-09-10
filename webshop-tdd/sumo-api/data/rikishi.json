@@ -6,8 +6,8 @@
       "rank": "Yokozuna",
       "height": "192 cm",
       "weight": "151 kg",
-      "price": "&#165;1 000 000",
-      "picture": "/src/assets/hakuho.jpg",
+      "price": "¥1 000 000",
+      "picture": "../images/hakuho.jpg",
       "vicsMessage": "I am the GOAT. Google me."
     },
     {
@@ -16,8 +16,8 @@
       "rank": "Yokozuna",
       "height": "192 cm",
       "weight": "184 kg",
-      "price": "&#165;1 000 000",
-      "picture": "/src/assets/terunofuji.jpg"
+      "price": "¥1 000 000",
+      "picture": "sumo-api/images/terunofuji.jpg"
     },
     {
       "id": 8,
@@ -25,8 +25,8 @@
       "rank": "Ozeki",
       "height": "175 cm",
       "weight": "183 kg",
-      "price": "&#165;900 000",
-      "picture": "/src/assets/takakeisho.jpg"
+      "price": "¥900 000",
+      "picture": "../../src/assets/takakeisho.jpg"
     },
     {
       "id": 7,
@@ -34,8 +34,8 @@
       "rank": "Sekiwake",
       "height": "179 cm",
       "weight": "172 kg",
-      "price": "&#165;800 000",
-      "picture": "/src/assets/mitakeumi.jpg"
+      "price": "¥800 000",
+      "picture": "./assets/mitakeumi.jpg"
     },
     {
       "id": 6,
@@ -43,8 +43,8 @@
       "rank": "Komusubi",
       "height": "187 cm",
       "weight": "177 kg",
-      "price": "&#165;700 000",
-      "picture": "/src/assets/takayasu.jpg"
+      "price": "¥700 000",
+      "picture": "assets/takayasu.jpg"
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@
       "rank": "Sekiwake",
       "height": "184 cm",
       "weight": "163 kg",
-      "price": "&#165;800 000",
+      "price": "¥800 000",
       "picture": "/src/assets/takanosho.jpg"
     },
     {
@@ -61,7 +61,7 @@
       "rank": "Maegashira",
       "height": "180 cm",
       "weight": "129 kg",
-      "price": "&#165;500 000",
+      "price": "¥500 000",
       "picture": "/src/assets/wakatakakage.jpg"
     },
     {
@@ -70,7 +70,7 @@
       "rank": "Maegashira",
       "height": "176 cm",
       "weight": "147 kg",
-      "price": "&#165;500 000",
+      "price": "¥500 000",
       "picture": "/src/assets/ura.jpg"
     },
     {
@@ -79,7 +79,7 @@
       "rank": "Maegashira",
       "height": "175 cm",
       "weight": "131 kg",
-      "price": "&#165;500 000",
+      "price": "¥500 000",
       "picture": "/src/assets/tobizaru.jpg"
     },
     {
@@ -88,7 +88,7 @@
       "rank": "Maegashira",
       "height": "192 cm",
       "weight": "175 kg",
-      "price": "&#165;500 000",
+      "price": "¥500 000",
       "picture": "/src/assets/tochinoshin.jpg"
     }
   ],
@@ -99,7 +99,7 @@
       "rank": "Maegashira",
       "height": "176 cm",
       "weight": "147 kg",
-      "price": "&#165;500 000",
+      "price": "¥500 000",
       "picture": "/src/assets/ura.jpg"
     }
   ]

@@ -27,11 +27,6 @@
             "price": "&#165;1 000 000"</p>
           </div>
         </div>
-        <div class="wrestler-card">
-          <img class="wrestler-pic" src="../assets/terunofuji.jpg" alt="hakuho">
-        </div>
-        <div class="wrestler-card">
-          <img class="wrestler-pic" src="../assets/takakeisho.jpg" alt="hakuho">
         </div> -->
       </article>
     </section>
@@ -92,7 +87,7 @@ export default {
   flex-direction: row;
 }
 
-.wrestler-card {
+/* .wrestler-card {
   display: flex;
   flex-direction: row;
   color: white;
@@ -100,7 +95,7 @@ export default {
 
 .wrestler-pic {
   height: 300px;
-}
+} */
 
 /* .wrestler-info {
   display: flex;

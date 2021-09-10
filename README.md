@@ -41,3 +41,7 @@ I also made som progress when it comes to rendering the API. I will used lifecyc
 
 ### September 10th
 After some help and some extensive problem shooting, the API finally renders as intended. I made a commit with some of the code that didn't work for documentation before I cleaned up the component. I had the problem that it wasn't looping through the data properly, and the solution is in hindsight almost laughable.
+
+I did run into another problem when it came to rendering the pictures. While the code knows it's a picture, all it's rendering is a placeholder and not the actual image. I tried a couple of different fixes, most of them regarding relative paths, but nothing worked. The pictures themselves are fine, there is just something in the communication that I can't crack for the moment being.
+
+This afternoon's commit is a safety backup.
