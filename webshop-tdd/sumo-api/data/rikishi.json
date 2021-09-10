@@ -92,7 +92,7 @@
       "picture": "/src/assets/tochinoshin.jpg"
     }
   ],
-  "carts": [
+    "carts": [
     {
       "id": 3,
       "shikona": "Ura",

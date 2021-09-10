@@ -38,3 +38,6 @@ Open terminal in project folder and run "npm run serve"
 - Figure out how to render the data from the API. The data is there, but isn't rendering properly.
 
 I also made som progress when it comes to rendering the API. I will used lifecycle hooks to render the data when site loads. This will require a different method of testing, more on that found [here](https://medium.com/@sebastiencorreia/testing-vue-js-lifecycle-hook-43c1227815bd).
+
+### September 10th
+After some help and some extensive problem shooting, the API finally renders as intended. I made a commit with some of the code that didn't work for documentation before I cleaned up the component. I had the problem that it wasn't looping through the data properly, and the solution is in hindsight almost laughable.
