@@ -16,21 +16,9 @@
         <h2>Wrestlers</h2>
       </article>
       <article class="product-block">
-        <h1>skksjf</h1>
-        <!-- <div class="wrestler-card">
-          <img class="wrestler-pic" src="../assets/hakuho.jpg" alt="placeholder">
-          <div class="wrestler-info">
-            <p>Hakuho</p>
-            <p>"rank": "Yokozuna",
-            "height": "192 cm",
-            "weight": "151 kg",
-            "price": "&#165;1 000 000"</p>
-          </div>
-        </div>
-        </div> -->
+        <ProductItem />
       </article>
     </section>
-    <ProductItem />
   </div>
 </template>
 
@@ -82,23 +70,11 @@ export default {
 .product-block {
   width: 100%;
   background-color: black;
-  border-radius: 2%;
+  border-radius: 1em;
+  padding: 1rem;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-
-/* .wrestler-card {
-  display: flex;
-  flex-direction: row;
-  color: white;
-}
-
-.wrestler-pic {
-  height: 300px;
-} */
-
-/* .wrestler-info {
-  display: flex;
-  flex-direction: column;
-} */
 </style>

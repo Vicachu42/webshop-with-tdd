@@ -58,6 +58,13 @@ h3 {
   margin-bottom: 0;
 }
 
+h4 {
+  color: white;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.1rem;
+}
+
 p {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 1rem;
