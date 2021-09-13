@@ -45,3 +45,6 @@ After some help and some extensive problem shooting, the API finally renders as 
 I did run into another problem when it came to rendering the pictures. While the code knows it's a picture, all it's rendering is a placeholder and not the actual image. I tried a couple of different fixes, most of them regarding relative paths, but nothing worked. The pictures themselves are fine, there is just something in the communication that I can't crack for the moment being.
 
 This afternoon's commit is a safety backup.
+
+### September 13th
+Tried one more fix for the image rendering. I tried fetching the data through a method instead to see if it acted any different, but the problem still persists. I don't have time to get stuck on this any more, so I'll work with a placeholder for the time being to further develope the design for the page.

@@ -1,8 +1,12 @@
 <template>
   <div class="wrapper">
     <Header />
-    <ProductView />
-    <CartView />
+    <span class="product-view" v-show="isRendered">
+      <ProductView />
+    </span>
+    <span class="cart-view" v-show="!isRendered">
+      <CartView />
+    </span>
     <Footer />
   </div>
 </template>
@@ -20,6 +24,11 @@ export default {
     ProductView,
     CartView,
     Footer
+  },
+  data() {
+    return {
+      isRendered: true
+    }
   }
 }
 </script>

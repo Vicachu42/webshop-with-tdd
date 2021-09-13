@@ -1,6 +1,7 @@
 <template>
   <div>
     <img src="../assets/basket.png" alt="basket" class="shopping-basket">
+    <!-- <button @click="isVisible = !isVisible">Press me</button> -->
   </div>
 </template>
 
