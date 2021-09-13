@@ -45,88 +45,15 @@ describe('Home.vue', () => {
     expect(wrapper.find('.product-view').isVisible()).toBe(true);
   });
 
-  it('should not show the cart view when rendered', () => {});
+  it('should not show the cart view when rendered', () => {
+    const wrapper = shallowMount(Home, {
+      data() {
+        return { isRendered: true };
+      },
+    });
+
+    expect(wrapper.find('.cart-view').isVisible()).toBe(false);
+  });
+
   it('should show the cart view when clicked', () => {});
 });
-
-// it('should display product view when rendered', () => {
-//   const expected = true;
-//   const componentElem = wrapper.find('ProductView');
-
-//   const
-
-//   expect(componentElem).toBe(expected);
-// });
-
-// it('should render child component', () => {
-//   const wrapper = shallowMount(Home, {
-//     data() {
-//       return { isVisible: true };
-//     },
-//   });
-//   expect(wrapper.findComponent({ name: 'Header' }).exists()).toBe(true);
-// });
-
-// it('should render child component', () => {
-//   const wrapper = shallowMount(Home);
-
-//   expect(wrapper.findComponent(Header).exists()).toBe(true);
-// });
-
-// import ProductView from '@views/ProductView.vue';
-
-// it('renders a child component', () => {
-//   const wrapper = shallowMount(Home, {
-//     data() {
-//       return { isVisible: true };
-//     },
-//   });
-
-//   expect(wrapper.findComponent({ name: 'ProductView' }).exists()).toBe(true);
-// });
-
-// describe('Home.vue', () => {
-//   // let wrapper;
-//   // beforeEach(() => {
-//   //   wrapper = shallowMount(Home);
-//   // });
-
-//   it('should display the product view when rendered', () => {
-//     const wrapper = shallowMount(Home);
-
-//     expect(wrapper.findComponent(ProductView).exists()).toBe(true);
-//   });
-
-//   // it('should not display the cart view when rendered', () => {
-
-//   // });
-// });
-
-// it('should show the product view when rendered', async () => {
-//     const expected = true;
-
-//     expect(wrapper.vm.$data).toBe(expected);
-
-// const expected = true;
-// const wrapper = shallowMount(ProductView);
-
-// await wrapper.setData({ isRendered: '' });
-
-// expect(wrapper.vm.$data).toBe(true);
-
-// expect(renderedElem).toBe(expected);
-
-// await wrapper.setData({ isRendered: true });
-
-// expect(wrapper.vm.isRendered).toBe(expected);
-
-// const renderedElem = wrapper.find(isRendered);
-// await renderedElem.setData(true);
-
-// const wrapper = shallowMount(ProductView, {
-//   data() {
-//     return {
-//       isRendered: true,
-//     };
-//   },
-// });

@@ -48,3 +48,9 @@ This afternoon's commit is a safety backup.
 
 ### September 13th
 Tried one more fix for the image rendering. I tried fetching the data through a method instead to see if it acted any different, but the problem still persists. I don't have time to get stuck on this any more, so I'll work with a placeholder for the time being to further develope the design for the page.
+
+One of the design elements I worked on was the information about the different wrestlers. While I'm satisfied with the look of the individual cards I had problem placing them within the product block. The inspector shows the flex dirextion as row, but for some reason they are still stacked as a column. I tried working with flex wrap and hard coded containers to solve the problem, but it still doesn't behave as intended.
+
+I have also finally started with some more serious testing. While testing out if the components are gets imported into the view was fairly straight forward, I struggled a bit more with testing visibility. The plan is to use to same view and toggle visibility between product listing and the shopping cart. At first I tried figuring out how to test the child components without much success, but by nesting the components into html I could target the spans rather than the components. That worked a lot better.
+
+For tomorrow the plan is to write a test for the button that toggles the visibility and to spend some time working on post and delete in backend.
