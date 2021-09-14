@@ -25,9 +25,15 @@ export default {
     }
   },
   mounted() {
+    this.init()
     fetch('http://localhost:3000/api/products')
       .then(res => res.json())
       .then(data => this.products = data)
+  },
+  methods: {
+    init() {
+      console.log('Hello, testing, testing. Does this work?');
+    }
   }
 
   // methods: {

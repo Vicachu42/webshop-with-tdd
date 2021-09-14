@@ -74,4 +74,7 @@ describe('Home.vue', () => {
 
     // await buttonElem.trigger('click')
   });
+
+  //This is optional, will do if I have the time
+  // it('should render the shopping cart icon inactive when cart view is visible', async () => {});
 });

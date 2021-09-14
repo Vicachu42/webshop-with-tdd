@@ -1,7 +1,8 @@
 <template>
   <div>
-    <p>Cart item</p>
       <article v-for="(product, index) in products.carts" :key="index">
+        <!-- <img :src="product.picture" alt="wrestler-pic"> -->
+        <img src="../assets/tobizaru.jpg" alt="placeholder">
         <p>{{ product.shikona }}</p>
         <p>{{ product.price }}</p>
       </article>

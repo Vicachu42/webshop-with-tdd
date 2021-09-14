@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <Header 
-      v-on:toggle="toggleViews" v-bind:class="shopping-basket"
+      v-on:toggle="toggleViews"
     />
     <span class="product-view" v-show="isRendered">
       <ProductView />
