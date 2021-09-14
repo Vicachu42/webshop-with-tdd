@@ -3,7 +3,9 @@
     <section class="header-bar">
       <article class=header-content>
         <h2 class="header-text">Step into the dohyo</h2>
-        <ShoppingCart />
+        <ShoppingCart 
+          v-on="$listeners"
+        />
       </article>
     </section>
   </div>

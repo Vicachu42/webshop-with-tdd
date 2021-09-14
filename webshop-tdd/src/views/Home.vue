@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <Header 
+      v-on:toggle="toggleViews" v-bind:class="shopping-basket"
+    />
     <span class="product-view" v-show="isRendered">
       <ProductView />
     </span>
@@ -28,6 +30,11 @@ export default {
   data() {
     return {
       isRendered: true
+    }
+  },
+  methods: {
+    toggleViews() {
+      this.isRendered = !this.isRendered
     }
   }
 }

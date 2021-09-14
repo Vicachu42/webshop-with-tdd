@@ -35,7 +35,7 @@ describe('Home.vue', () => {
     // console.log(footer);
   });
 
-  it('should show the product view when rendered', async () => {
+  it('should show the product view when rendered', () => {
     const wrapper = shallowMount(Home, {
       data() {
         return { isRendered: true };
@@ -55,5 +55,23 @@ describe('Home.vue', () => {
     expect(wrapper.find('.cart-view').isVisible()).toBe(false);
   });
 
-  it('should show the cart view when clicked', () => {});
+  it('should show the cart view when clicked', async () => {
+    const wrapper = shallowMount(Home, {
+      data() {
+        return { isRendered: true };
+      },
+    });
+
+    const buttonElem = wrapper.find('.shopping-basket');
+    await buttonElem.trigger('click');
+
+    expect(isRendered.called).toBe(true);
+
+    // expect(wrapper.find('.shopping-cart'))
+
+    // const expected = false;
+    // const buttonElem = wrapper.find('.shopping-basket');
+
+    // await buttonElem.trigger('click')
+  });
 });

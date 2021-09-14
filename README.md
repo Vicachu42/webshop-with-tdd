@@ -54,3 +54,6 @@ One of the design elements I worked on was the information about the different w
 I have also finally started with some more serious testing. While testing out if the components are gets imported into the view was fairly straight forward, I struggled a bit more with testing visibility. The plan is to use to same view and toggle visibility between product listing and the shopping cart. At first I tried figuring out how to test the child components without much success, but by nesting the components into html I could target the spans rather than the components. That worked a lot better.
 
 For tomorrow the plan is to write a test for the button that toggles the visibility and to spend some time working on post and delete in backend.
+
+### September 14th
+Today I started working on a test that should test whether you can toggle between the views on Home.vue. At the moment, it can't find the element I'm supposed to test, and I don't know if it has something to do with the element being nested into a grand child (even though the event has been emitted to the parent).

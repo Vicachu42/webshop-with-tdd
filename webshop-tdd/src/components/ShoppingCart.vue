@@ -1,13 +1,17 @@
 <template>
   <div>
-    <img src="../assets/basket.png" alt="basket" class="shopping-basket">
-    <!-- <button @click="isVisible = !isVisible">Press me</button> -->
+    <img src="../assets/basket.png" alt="basket" class="shopping-basket" @click="$emit('toggle')">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ShoppingCart'
+  name: 'ShoppingCart',
+  methods: {
+    emitToggle() {
+      this.$emit('toggle')
+    }
+  }
 }
 </script>
 
