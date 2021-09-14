@@ -38,6 +38,7 @@ export default {
   width: 1000px;
   margin: auto;
   margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1rem;
   background-color: white;
 }

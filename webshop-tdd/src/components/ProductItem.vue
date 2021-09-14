@@ -9,7 +9,7 @@
         <p><b>Height:</b> {{ product.height }}</p>
         <p><b>Weight:</b> {{ product.weight }}</p>
         <p><b>Price:</b> {{ product.price }}</p>
-        <button class="add-product">Add to cart</button>
+        <button class="add-product">Add To Cart</button>
       </div>
     </article>
   </div>
@@ -65,26 +65,5 @@ export default {
 .wrestler-info p {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
-}
-
-button {
-  background-color: #27386E;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.5em;
-  font-size: 1rem;
-  padding: 5px 10px 5px 10px;
-  margin-top: 0.4rem;
-  border: none;
-}
-
-button:hover {
-  background-color: #302332;
-}
-
-button:active {
-  transform: translateY(3px);
-  background-color: #302332;
 }
 </style>

@@ -18,8 +18,6 @@ export default {
   width: 100%;
   height: 50px;
   text-align: center;
-  /* position: sticky;
-  bottom: 0; */
 }
 
 .footer-bar .hakkeyoi {

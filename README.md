@@ -57,3 +57,10 @@ For tomorrow the plan is to write a test for the button that toggles the visibil
 
 ### September 14th
 Today I started working on a test that should test whether you can toggle between the views on Home.vue. At the moment, it can't find the element I'm supposed to test, and I don't know if it has something to do with the element being nested into a grand child (even though the event has been emitted to the parent).
+
+To better structure my work I made a todo list on paper and ranked the tasks after importance. The tasks where among others setting up tests, event handling, and complete design with placeholders. I've completed a fair few of them, and am backing them up now in the end of the work day.
+
+The deadline for the project is tomorrow, and to finish the project properly I will focus first and foremost on these tasks:
+- Finish at least one fetch test
+- Make sure current tests are solid
+- Update and complete technical requirement list

@@ -3,7 +3,14 @@
     <article class="cart-bar">
       <h2>Shopping Cart</h2>
     </article>
-    <CartItem />
+    <article class="cart-block">
+      <CartItem />
+      <h4>Total: ¥1 500 000</h4>
+    </article>
+    <article class="button-container">
+      <button @click="$emit('toggle')">Go Back</button>
+      <button>Checkout</button>
+    </article>
   </div>
 </template>
 
@@ -14,6 +21,11 @@ export default {
   name: 'CartView',
   components: {
     CartItem
+  },
+  methods: {
+    emitToggle() {
+      this.$emit('toggle')
+    }
   }
 }
 </script>
@@ -23,6 +35,7 @@ export default {
   width: 1000px;
   margin: auto;
   margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1rem;
   background-color: white;
 }
@@ -34,5 +47,23 @@ export default {
 
 .cart-bar h2 {
   margin-left: 1rem;
+}
+
+.cart-block {
+  width: 100%;
+  background-color: black;
+  border-radius: 1em;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+.cart-block h4 {
+  text-align: right;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

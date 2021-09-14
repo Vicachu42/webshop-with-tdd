@@ -7,7 +7,9 @@
       <ProductView />
     </span>
     <span class="cart-view" v-show="!isRendered">
-      <CartView />
+      <CartView 
+        v-on:toggle="toggleViews"
+      />
     </span>
     <Footer />
   </div>
@@ -50,6 +52,28 @@ export default {
 
 img {
   border-radius: 2%;
+}
+
+button {
+  background-color: #27386E;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  height: 2rem;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  padding: 5px 10px 5px 10px;
+  margin-top: 0.4rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #302332;
+}
+
+button:active {
+  transform: translateY(3px);
+  background-color: #302332;
 }
 
 h1 {
