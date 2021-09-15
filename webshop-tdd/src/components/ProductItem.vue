@@ -1,8 +1,8 @@
 <template>
   <div>
     <article v-for="(product, index) in products.products" :key="index" class="wrestler-card">
-      <!-- <img :src="product.picture" alt="wrestler-pic"> -->
-      <img src="../assets/hakuho.jpg" alt="placeholder" class="wrestler-pic">
+      <img :src="product.picture" alt="wrestler-pic">
+      <!-- <img src="../assets/hakuho.jpg" alt="placeholder" class="wrestler-pic"> -->
       <div class="wrestler-info">
         <h4>{{ product.shikona }}</h4>
         <p><b>Rank:</b> {{ product.rank }}</p>
@@ -26,13 +26,12 @@ export default {
   },
   mounted() {
     this.init()
-    fetch('http://localhost:3000/api/products')
-      .then(res => res.json())
-      .then(data => this.products = data)
   },
   methods: {
     init() {
-      console.log('Hello, testing, testing. Does this work?');
+      fetch('http://localhost:3000/api/products')
+      .then(res => res.json())
+      .then(data => this.products = data)
     }
   }
 

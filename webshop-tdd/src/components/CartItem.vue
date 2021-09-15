@@ -41,13 +41,13 @@ export default {
 }
 
 .product-pic {
-  height: 300px;
+  height: 200px;
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
 .item-info p {
-  width: 675px;
+  width: 735px;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
 }

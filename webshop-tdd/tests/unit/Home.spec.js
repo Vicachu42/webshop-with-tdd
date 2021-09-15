@@ -1,13 +1,15 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, mount } from '@vue/test-utils';
 import Home from '@/views/Home.vue';
 import Header from '@/components/Header.vue';
 import ProductView from '@/views/ProductView.vue';
 import CartView from '@/views/CartView.vue';
 import Footer from '@/components/Footer.vue';
+import { enableFetchMocks } from 'jest-fetch-mock';
 
 describe('Home.vue', () => {
   let wrapper;
   beforeEach(() => {
+    enableFetchMocks();
     wrapper = shallowMount(Home);
   });
 
@@ -56,7 +58,7 @@ describe('Home.vue', () => {
   });
 
   it('should show the cart view when clicked', async () => {
-    const wrapper = shallowMount(Home, {
+    const wrapper = mount(Home, {
       data() {
         return { isRendered: true };
       },

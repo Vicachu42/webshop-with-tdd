@@ -76,6 +76,6 @@ export default {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: row;
 }
 </style>

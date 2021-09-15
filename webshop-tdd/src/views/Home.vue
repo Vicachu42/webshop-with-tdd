@@ -36,7 +36,9 @@ export default {
   },
   methods: {
     toggleViews() {
-      this.isRendered = !this.isRendered
+      if (this.isRendered == true) {
+        this.isRendered = !this.isRendered
+      } 
     }
   }
 }

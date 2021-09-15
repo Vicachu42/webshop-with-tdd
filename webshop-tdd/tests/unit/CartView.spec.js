@@ -15,6 +15,7 @@ describe('CartView.vue', () => {
   });
 
   // Am I testing what I think I'm testing here?
+  // Testa klickevent
   it('should show the product view when clicked', async () => {
     wrapper.vm.emitToggle();
     console.log(wrapper.emitted());
