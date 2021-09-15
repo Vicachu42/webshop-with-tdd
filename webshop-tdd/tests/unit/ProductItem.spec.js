@@ -255,7 +255,16 @@ describe('Life cycle hook', () => {
     expect(text).toBe(expected);
   });
 
-  it('should add a product to the cart', () => {});
+  it('should add a product to the cart', async () => {
+    const addProduct = jest.spyOn(ProductItem.methods, 'addToCart');
+    const wrapper = shallowMount(ProductItem);
+
+    const buttonElem = wrapper.find('.add-product');
+    await buttonElem.trigger('click');
+
+    console.log(addProduct);
+    expect(addProduct).toBeCalled();
+  });
 
   // This requires an error message in my fetch
   // it('should return an error message if a fetch cannot be mocked', async () => { });

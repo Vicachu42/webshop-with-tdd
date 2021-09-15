@@ -8,7 +8,7 @@
       <h4>Total: ¥1 500 000</h4>
     </article>
     <article class="button-container">
-      <button @click="$emit('toggle')">Go Back</button>
+      <button @click="$emit('toggle')" class="go-back-button">Go Back</button>
       <button>Checkout</button>
     </article>
   </div>

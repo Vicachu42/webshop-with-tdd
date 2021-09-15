@@ -7,8 +7,9 @@ describe('ShoppingCart.vue', () => {
     wrapper = shallowMount(ShoppingCart);
   });
 
-  // Am I testing what I think I'm testing here?
   it('should show the product view when clicked', async () => {
+    await wrapper.find('.shopping-basket').trigger('click');
+
     wrapper.vm.emitToggle();
     console.log(wrapper.emitted());
   });

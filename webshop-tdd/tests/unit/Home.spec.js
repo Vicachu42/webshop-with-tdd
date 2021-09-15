@@ -58,7 +58,6 @@ describe('Home.vue', () => {
   });
 
   it('should show the cart view when clicked', async () => {
-    // const expected = false;
     const wrapper = mount(Home, {
       data() {
         return { isRendered: true };
@@ -68,20 +67,21 @@ describe('Home.vue', () => {
     const buttonElem = wrapper.find('.shopping-basket');
     await buttonElem.trigger('click');
 
-    expect(wrapper.find('.product-view').isVisible()).toBe(false);
-
-    // expect(buttonElem.called).toBe(expected);
-
-    // expect(buttonElem).toBeCalled();
-
-    // expect(wrapper.find('.shopping-cart'))
-
-    // const expected = false;
-
-    // await buttonElem.trigger('click')
+    expect(wrapper.find('.cart-view').isVisible()).toBe(true);
   });
 
-  it('should show the product view when clicked', async () => {});
+  it('should show the product view when clicked', async () => {
+    const wrapper = mount(Home, {
+      data() {
+        return { isRendered: false };
+      },
+    });
+
+    const buttonElem = wrapper.find('.go-back-button');
+    await buttonElem.trigger('click');
+
+    expect(wrapper.find('.product-view').isVisible()).toBe(true);
+  });
 
   //This is optional, will do if I have the time
   // it('should render the shopping cart icon inactive when cart view is visible', async () => {});

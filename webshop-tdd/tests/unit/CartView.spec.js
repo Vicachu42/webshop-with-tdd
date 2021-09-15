@@ -14,7 +14,6 @@ describe('CartView.vue', () => {
     // console.log(cartItem);
   });
 
-  // Testa klickevent
   it('should show the product view when clicked', async () => {
     await wrapper.find('button').trigger('click');
 
