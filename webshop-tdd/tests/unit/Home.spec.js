@@ -58,7 +58,7 @@ describe('Home.vue', () => {
   });
 
   it('should show the cart view when clicked', async () => {
-    const expected = false;
+    // const expected = false;
     const wrapper = mount(Home, {
       data() {
         return { isRendered: true };
@@ -67,9 +67,10 @@ describe('Home.vue', () => {
 
     const buttonElem = wrapper.find('.shopping-basket');
     await buttonElem.trigger('click');
-    await buttonElem.trigger('click');
 
-    expect(buttonElem.called).toBe(expected);
+    expect(wrapper.find('.product-view').isVisible()).toBe(false);
+
+    // expect(buttonElem.called).toBe(expected);
 
     // expect(buttonElem).toBeCalled();
 

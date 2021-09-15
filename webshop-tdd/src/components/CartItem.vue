@@ -1,6 +1,6 @@
 <template>
   <div>
-      <article v-for="(product, index) in products.carts" :key="index">
+      <article v-for="(product, index) in products" :key="index">
         <div class="item-listing">
           <img :src="product.picture" alt="wrestler-pic" class="product-pic">
           <article class="item-info">
@@ -23,7 +23,7 @@ export default {
     }
   },
     mounted() {
-    fetch('http://localhost:3000/api/products')
+    fetch('http://localhost:3000/api/carts')
       .then(res => res.json())
       .then(data => this.products = data)
   }

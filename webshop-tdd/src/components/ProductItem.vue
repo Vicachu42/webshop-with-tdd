@@ -1,6 +1,6 @@
 <template>
   <div class="product-item-wrapper">
-    <article v-for="(product, index) in products.products" :key="index" class="wrestler-card">
+    <article v-for="(product, index) in products" :key="index" class="wrestler-card">
       <img :src="product.picture" alt="wrestler-pic" class="wrestler-pic">
       <div class="wrestler-info">
         <h4>{{ product.shikona }}</h4>
@@ -8,7 +8,7 @@
         <p><b>Height:</b> {{ product.height }}</p>
         <p><b>Weight:</b> {{ product.weight }}</p>
         <p><b>Price:</b> {{ product.price }}</p>
-        <button @click="addToCart()" class="add-product">Add To Cart</button>
+        <button @click="addToCart(product.id)" class="add-product">Add To Cart</button>
       </div>
     </article>
   </div>
@@ -31,8 +31,10 @@ export default {
       .then(res => res.json())
       .then(data => this.products = data)
     },
-    addToCart(data) {
-      this.carts.push(data);
+    async addToCart(data) {
+      const res = await fetch('http://localhost:3000/api/carts/' + data, {method: 'POST'} );
+      const result = await res.json();
+      console.log(result);
     }
   }
   // methods: {

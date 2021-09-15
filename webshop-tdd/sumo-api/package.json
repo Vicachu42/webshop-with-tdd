@@ -13,6 +13,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express-vue": "^5.16.0",
-    "lowdb": "^2.1.0"
+    "lowdb": "1.0.0"
   }
 }
