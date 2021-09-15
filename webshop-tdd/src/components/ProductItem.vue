@@ -1,8 +1,7 @@
 <template>
-  <div>
+  <div class="product-item-wrapper">
     <article v-for="(product, index) in products.products" :key="index" class="wrestler-card">
-      <img :src="product.picture" alt="wrestler-pic">
-      <!-- <img src="../assets/hakuho.jpg" alt="placeholder" class="wrestler-pic"> -->
+      <img :src="product.picture" alt="wrestler-pic" class="wrestler-pic">
       <div class="wrestler-info">
         <h4>{{ product.shikona }}</h4>
         <p><b>Rank:</b> {{ product.rank }}</p>
@@ -34,7 +33,6 @@ export default {
       .then(data => this.products = data)
     }
   }
-
   // methods: {
   //   async getRikishi() {
   //     const response = await fetch('http://localhost:3000/api/products');
@@ -48,16 +46,24 @@ export default {
 </script>
 
 <style scoped>
+.product-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .wrestler-card {
   display: flex;
   flex-direction: row;
   color: white;
-  width: 100%;
-  /* border: dashed white; */
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  width: 300px;
 }
 
 .wrestler-pic {
-  height: 300px;
+  height: 220px;
   margin-right: 1rem;
 }
 

@@ -74,8 +74,5 @@ export default {
   border-radius: 1em;
   padding: 1rem;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
 }
 </style>

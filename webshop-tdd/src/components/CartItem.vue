@@ -2,8 +2,7 @@
   <div>
       <article v-for="(product, index) in products.carts" :key="index">
         <div class="item-listing">
-          <!-- <img :src="product.picture" alt="wrestler-pic"> -->
-          <img src="../assets/tobizaru.jpg" alt="placeholder" class="product-pic">
+          <img :src="product.picture" alt="wrestler-pic" class="product-pic">
           <article class="item-info">
             <h4>{{ product.shikona }}</h4>
             <p><b>Rank:</b> {{ product.rank }}</p>

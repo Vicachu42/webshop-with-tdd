@@ -17,7 +17,7 @@
       "height": "192 cm",
       "weight": "184 kg",
       "price": "¥1 000 000",
-      "picture": "sumo-api/images/terunofuji.jpg"
+      "picture": "../images/terunofuji.jpg"
     },
     {
       "id": 8,
@@ -26,7 +26,7 @@
       "height": "175 cm",
       "weight": "183 kg",
       "price": "¥900 000",
-      "picture": "../../src/assets/takakeisho.jpg"
+      "picture": "../images/takakeisho.jpg"
     },
     {
       "id": 7,
@@ -35,7 +35,7 @@
       "height": "179 cm",
       "weight": "172 kg",
       "price": "¥800 000",
-      "picture": "./assets/mitakeumi.jpg"
+      "picture": "../images/mitakeumi.jpg"
     },
     {
       "id": 6,
@@ -44,7 +44,7 @@
       "height": "187 cm",
       "weight": "177 kg",
       "price": "¥700 000",
-      "picture": "assets/takayasu.jpg"
+      "picture": "../images/takayasu.jpg"
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "height": "184 cm",
       "weight": "163 kg",
       "price": "¥800 000",
-      "picture": "/src/assets/takanosho.jpg"
+      "picture": "../images/takanosho.jpg"
     },
     {
       "id": 4,
@@ -62,7 +62,7 @@
       "height": "180 cm",
       "weight": "129 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/wakatakakage.jpg"
+      "picture": "../images/wakatakakage.jpg"
     },
     {
       "id": 3,
@@ -71,7 +71,7 @@
       "height": "176 cm",
       "weight": "147 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/ura.jpg"
+      "picture": "../images/ura.jpg"
     },
     {
       "id": 2,
@@ -80,7 +80,7 @@
       "height": "175 cm",
       "weight": "131 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/tobizaru.jpg"
+      "picture": "../images/tobizaru.jpg"
     },
     {
       "id": 1,
@@ -89,7 +89,7 @@
       "height": "192 cm",
       "weight": "175 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/tochinoshin.jpg"
+      "picture": "../images/tochinoshin.jpg"
     }
   ],
     "carts": [
@@ -100,7 +100,7 @@
       "height": "176 cm",
       "weight": "147 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/ura.jpg"
+      "picture": "../images//ura.jpg"
     },
     {
       "id": 2,
@@ -109,7 +109,7 @@
       "height": "175 cm",
       "weight": "131 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/tobizaru.jpg"
+      "picture": "../images/tobizaru.jpg"
     },
     {
       "id": 4,
@@ -118,7 +118,7 @@
       "height": "180 cm",
       "weight": "129 kg",
       "price": "¥500 000",
-      "picture": "/src/assets/wakatakakage.jpg"
+      "picture": "../images/wakatakakage.jpg"
     }
   ]
 }
