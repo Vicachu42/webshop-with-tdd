@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
     <Header 
-      v-on:toggle="toggleViews"
+      v-on:toggle="toggleToCart"
     />
     <span class="product-view" v-show="isRendered">
       <ProductView />
     </span>
     <span class="cart-view" v-show="!isRendered">
       <CartView 
-        v-on:toggle="toggleViews"
+        v-on:toggle="toggleToProducts"
       />
     </span>
     <Footer />
@@ -35,8 +35,13 @@ export default {
     }
   },
   methods: {
-    toggleViews() {
+    toggleToCart() {
       if (this.isRendered == true) {
+        this.isRendered = !this.isRendered
+      } 
+    },
+    toggleToProducts() {
+      if (this.isRendered == false) {
         this.isRendered = !this.isRendered
       } 
     }

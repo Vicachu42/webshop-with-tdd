@@ -13,6 +13,4 @@ describe('Header.vue', () => {
     expect(shoppingCart.exists()).toBe(true);
     console.log(shoppingCart);
   });
-
-  //Should I test the listener?
 });
