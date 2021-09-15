@@ -8,7 +8,7 @@
         <p><b>Height:</b> {{ product.height }}</p>
         <p><b>Weight:</b> {{ product.weight }}</p>
         <p><b>Price:</b> {{ product.price }}</p>
-        <button class="add-product">Add To Cart</button>
+        <button @click="addToCart()" class="add-product">Add To Cart</button>
       </div>
     </article>
   </div>
@@ -20,7 +20,6 @@ export default {
   data() {
     return {
       products: [],
-      picture: Image
     }
   },
   mounted() {
@@ -31,6 +30,9 @@ export default {
       fetch('http://localhost:3000/api/products')
       .then(res => res.json())
       .then(data => this.products = data)
+    },
+    addToCart(data) {
+      this.carts.push(data);
     }
   }
   // methods: {

@@ -2,14 +2,14 @@ import { shallowMount } from '@vue/test-utils';
 import ProductItem from '@/components/ProductItem.vue';
 import { enableFetchMocks } from 'jest-fetch-mock';
 
-describe('Cycle hook', () => {
+describe('Life cycle hook', () => {
   beforeEach(() => {
     enableFetchMocks();
     fetch.mockResponseOnce(
       JSON.stringify({
         products: [
           {
-            id: 10,
+            id: 12,
             shikona: 'Hakuho',
             rank: 'Yokozuna',
             height: '192 cm',
@@ -19,49 +19,67 @@ describe('Cycle hook', () => {
             vicsMessage: 'I am the GOAT. Google me.',
           },
           {
-            id: 9,
+            id: 11,
             shikona: 'Terunofuji',
             rank: 'Yokozuna',
             height: '192 cm',
             weight: '184 kg',
             price: 'Â¥1 000 000',
-            picture: 'sumo-api/images/terunofuji.jpg',
+            picture: '../images/terunofuji.jpg',
           },
           {
-            id: 8,
+            id: 10,
             shikona: 'Takakeisho',
             rank: 'Ozeki',
             height: '175 cm',
             weight: '183 kg',
             price: 'Â¥900 000',
-            picture: '../../src/assets/takakeisho.jpg',
+            picture: '../images/takakeisho.jpg',
           },
           {
-            id: 7,
+            id: 9,
             shikona: 'Mitakeumi',
             rank: 'Sekiwake',
             height: '179 cm',
             weight: '172 kg',
             price: 'Â¥800 000',
-            picture: './assets/mitakeumi.jpg',
+            picture: '../images/mitakeumi.jpg',
           },
           {
-            id: 6,
+            id: 8,
             shikona: 'Takayasu',
             rank: 'Komusubi',
             height: '187 cm',
             weight: '177 kg',
             price: 'Â¥700 000',
-            picture: 'assets/takayasu.jpg',
+            picture: '../images/takayasu.jpg',
+          },
+          {
+            id: 7,
+            shikona: 'Ichinojo',
+            rank: 'Komusubi',
+            height: '190 cm',
+            weight: '206 kg',
+            price: 'Â¥700 000',
+            picture: '../images/ichinojo.jpg',
+          },
+          {
+            id: 6,
+            shikona: 'Hoshoryu',
+            rank: 'Maegashira',
+            height: '187 cm',
+            weight: '132 kg',
+            price: 'Â¥500 000',
+            picture: '../images/hoshoryu.jpg',
           },
           {
             id: 5,
             shikona: 'Takanosho',
-            rank: 'Sekiwake',
+            rank: 'Maegashira',
             height: '184 cm',
             weight: '163 kg',
-            price: 'Â¥800 000',
-            picture: '/src/assets/takanosho.jpg',
+            price: 'Â¥500 000',
+            picture: '../images/takanosho.jpg',
           },
           {
             id: 4,
@@ -70,7 +88,7 @@ describe('Cycle hook', () => {
             height: '180 cm',
             weight: '129 kg',
             price: 'Â¥500 000',
-            picture: '/src/assets/wakatakakage.jpg',
+            picture: '../images/wakatakakage.jpg',
           },
           {
             id: 3,
@@ -79,7 +97,7 @@ describe('Cycle hook', () => {
             height: '176 cm',
             weight: '147 kg',
             price: 'Â¥500 000',
-            picture: '/src/assets/ura.jpg',
+            picture: '../images/ura.jpg',
           },
           {
             id: 2,
@@ -88,7 +106,7 @@ describe('Cycle hook', () => {
             height: '175 cm',
             weight: '131 kg',
             price: 'Â¥500 000',
-            picture: '/src/assets/tobizaru.jpg',
+            picture: '../images/tobizaru.jpg',
           },
           {
             id: 1,
@@ -97,7 +115,7 @@ describe('Cycle hook', () => {
             height: '192 cm',
             weight: '175 kg',
             price: 'Â¥500 000',
-            picture: '/src/assets/tochinoshin.jpg',
+            picture: '../images/tochinoshin.jpg',
           },
         ],
       })
@@ -112,21 +130,42 @@ describe('Cycle hook', () => {
     expect(calls).toBe(1);
   });
 
-  // it('should call the init method', () => {
-  //   const spy = jest.spyOn(ProductItem.methods, 'init');
-  //   createWrapper = shallowMount(ProductItem, { localvue });
-  //   expect(spy).toBeCalled();
-  // });
+  it('should show the fetched data when rendered', () => {
+    const expected = 'Terunofuji';
+    const wrapper = shallowMount(ProductItem);
 
-  // it('should call the init method', () => {
-  //   wrapper = shallowMount(ProductItem, {
-  //     localvue,
-  //     methods: {
-  //       init: jest.fn(),
+    // Saknar jag ett sätt att kalla på mocken?
+
+    const nameElem = wrapper.find('h4');
+    const text = nameElem.text();
+
+    expect(text).toContain(expected);
+  });
+
+  // it('should show the results from the fetch call correctly', async () => {
+  //   const expected = 'Terunofuji';
+  //   const wrapper = shallowMount(ProductItem);
+
+  //   await wrapper.setData({
+  //     products: {
+  //       id: 9,
+  //       shikona: 'Terunofuji',
+  //       rank: 'Yokozuna',
+  //       height: '192 cm',
+  //       weight: '184 kg',
+  //       price: 'Â¥1 000 000',
+  //       picture: '../images/terunofuji.jpg',
   //     },
   //   });
-  //   expect(wrapper.vm.init).toBeCalled();
+
+  //   const shikonaElem = wrapper.find('h4');
+  //   const text = shikonaElem.text();
+  //   console.log(text);
+  //   expect(text).toBe(expected);
   // });
 
-  // await wrapper.vm.init();
+  it('should add a product to the cart', () => {});
+
+  // This requires an error message in my fetch
+  // it('should return an error message if a fetch cannot be mocked', async () => { });
 });
