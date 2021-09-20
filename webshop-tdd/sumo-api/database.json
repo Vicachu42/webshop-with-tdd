@@ -130,15 +130,6 @@
       "picture": "../images/tobizaru.jpg"
     },
     {
-      "id": 4,
-      "shikona": "Wakatakakage",
-      "rank": "Maegashira",
-      "height": "180 cm",
-      "weight": "129 kg",
-      "price": "¥500 000",
-      "picture": "../images/wakatakakage.jpg"
-    },
-    {
       "id": 1,
       "shikona": "Tochinoshin",
       "rank": "Maegashira",
@@ -148,22 +139,13 @@
       "picture": "../images/tochinoshin.jpg"
     },
     {
-      "id": 11,
-      "shikona": "Terunofuji",
-      "rank": "Yokozuna",
-      "height": "192 cm",
-      "weight": "184 kg",
-      "price": "¥1 000 000",
-      "picture": "../images/terunofuji.jpg"
-    },
-    {
-      "id": 10,
-      "shikona": "Takakeisho",
-      "rank": "Ozeki",
-      "height": "175 cm",
-      "weight": "183 kg",
-      "price": "¥900 000",
-      "picture": "../images/takakeisho.jpg"
+      "id": 8,
+      "shikona": "Takayasu",
+      "rank": "Komusubi",
+      "height": "187 cm",
+      "weight": "177 kg",
+      "price": "¥700 000",
+      "picture": "../images/takayasu.jpg"
     }
   ]
 }

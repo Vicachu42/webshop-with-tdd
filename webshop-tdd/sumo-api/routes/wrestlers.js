@@ -51,7 +51,7 @@ router.post('/carts/:id', async (req, res) => {
     //If product already exists
     console.log('This product is already in your cart');
     res.status(418);
-    res.json(errorAdd.message);
+    res.json({ error: errorAdd.message });
   } else {
     //If product doesn't exist
     database
@@ -59,7 +59,7 @@ router.post('/carts/:id', async (req, res) => {
       .push(data)
       .write();
     res.status(200);
-    res.json(data);
+    res.json({ result: data });
   }
 });
 
